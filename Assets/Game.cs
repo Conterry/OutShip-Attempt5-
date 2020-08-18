@@ -6,13 +6,9 @@ public class Game : MonoBehaviour
 {
 
     private bool CanStart = false;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-    }
-
-    // Update is called once per frame
+    private int a = 0;
+    
+    
     void Update()
     {
         if (CanStart == false)
@@ -21,12 +17,18 @@ public class Game : MonoBehaviour
             StartButton startButton = Button.GetComponent<StartButton>();
             CanStart = startButton.CanStartGame;
         }
+        else
         {
-            GameProcess();
+            if (a != 1)
+            {
+                a++;
+                StartGameProcess();
+            }
+
         }
     }
 
-    private void GameProcess()
+    private void StartGameProcess()
     {
 
     }

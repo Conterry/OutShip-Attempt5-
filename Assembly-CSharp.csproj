@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Game.cs" />
+    <Compile Include="Assets\Ships.cs" />
     <Compile Include="Assets\StartButton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/glebo/UnityProjects/OutShip/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
