@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Ships : MonoBehaviour
 {
-    /*GameObject Slider = GameObject.Find("ShipSlider");
+    /*GameObject Slider;
 
     private void Start()
     {
+        Slider = GameObject.Find("ShipSlider");
         Slider.SetActive(false);
     }
 
@@ -19,10 +21,9 @@ public class Ships : MonoBehaviour
     }
 
     bool CanPlay() {
-        GameObject Button = GameObject.Find("StartButton");
+        GameObject Button = GameObject.Find("Panel");
         StartButton startButton = Button.GetComponent<StartButton>();
         bool CanStart = startButton.CanStartGame;
-        return true;
-    }
-    */
+        return CanStart==true;
+    }*/
 }

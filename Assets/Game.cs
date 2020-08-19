@@ -1,38 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Game : MonoBehaviour
 {
 
     private bool CanStart = false;
-    private int a = 0;
-    
+    public GameObject Ship1;
     
     void Update()
     {
-        Debug.Log(CanStart);
+        
+
         if (CanStart == false)
         {
-            GameObject Button = GameObject.Find("StartButton");
+            GameObject Button = GameObject.Find("Panel");
             StartButton startButton = Button.GetComponent<StartButton>();
             CanStart = startButton.CanStartGame;
         }
         else
         {
-            Debug.Log("..........");
-            if (a != 1)
-            {
-                a++;
-                StartGameProcess();
-            }
+            Ship1.transform.Translate(Vector3.back * 1);
+
 
         }
-    }
-
-    private void StartGameProcess()
-    {
-
     }
 
 
