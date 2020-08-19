@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ships : MonoBehaviour
 {
-    GameObject Slider = GameObject.Find("ShipSlider");
+    /*GameObject Slider = GameObject.Find("ShipSlider");
 
     private void Start()
     {
@@ -24,5 +24,5 @@ public class Ships : MonoBehaviour
         bool CanStart = startButton.CanStartGame;
         return true;
     }
-
+    */
 }

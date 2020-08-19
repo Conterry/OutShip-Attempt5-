@@ -11,6 +11,7 @@ public class Game : MonoBehaviour
     
     void Update()
     {
+        Debug.Log(CanStart);
         if (CanStart == false)
         {
             GameObject Button = GameObject.Find("StartButton");
@@ -19,6 +20,7 @@ public class Game : MonoBehaviour
         }
         else
         {
+            Debug.Log("..........");
             if (a != 1)
             {
                 a++;
