@@ -7,7 +7,6 @@ public class Game : MonoBehaviour
 {
 
     private bool CanStart = false;
-    public GameObject Ship1;
     
     void Update()
     {
@@ -21,7 +20,10 @@ public class Game : MonoBehaviour
         }
         else
         {
-            Ship1.transform.Translate(Vector3.back * 1);
+            
+
+
+
 
 
         }
